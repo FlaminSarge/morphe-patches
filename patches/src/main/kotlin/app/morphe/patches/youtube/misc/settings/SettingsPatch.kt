@@ -47,6 +47,7 @@ import app.morphe.patches.youtube.misc.extension.sharedExtensionPatch
 import app.morphe.patches.youtube.misc.fix.contentprovider.fixContentProviderPatch
 import app.morphe.patches.youtube.misc.fix.likebutton.fixLikeButtonPatch
 import app.morphe.patches.youtube.misc.fix.pipchatbar.fixPipChatBarPatch
+import app.morphe.patches.youtube.misc.fix.pipfailureexit.fixPipFailureExitPatch
 import app.morphe.patches.youtube.misc.fix.playbackspeed.fixPlaybackSpeedWhilePlayingPatch
 import app.morphe.patches.youtube.misc.fix.preference.fixPreferenceIconPatch
 import app.morphe.patches.youtube.misc.playservice.is_20_31_or_greater
@@ -212,6 +213,7 @@ val settingsPatch = bytecodePatch(
         fixLikeButtonPatch,
         fixContentProviderPatch,
         fixPipChatBarPatch,
+        fixPipFailureExitPatch,
         // Currently there is no easy way to make a mandatory patch,
         // so for now this is a dependent of this patch.
         checkEnvironmentPatch,
